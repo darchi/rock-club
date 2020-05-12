@@ -1,26 +1,39 @@
 {
-  "name": "rock-club",
-  "version": "1.0.0",
-  "description": "rock-web",
-  "main": "index.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://darchi.github.io/rock-club",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
   "scripts": {
-    "test": "test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/darchi/rock-club.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "rock"
-  ],
-  "author": "Konstantin Kukharev <konstantin.kuharev@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/darchi/rock-club/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://darchi.github.io/rock-club/",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
