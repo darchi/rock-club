@@ -16,27 +16,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [10.x, 12.x]
 
     steps:
-      - name: Install
-        uses: actions/npm@e7aaefe
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-        args: run install
-      - name: Build
-        uses: actions/npm@e7aaefe
-        with:
-          node-version: ${{ matrix.node-version }}
-        args: run build
-      - name: Deploy
-        uses: nchaulet/github-action-gh-pages@master
-        with:
-          node-version: ${{ matrix.node-version }}
-        args: run deploy
-        env:
-          CI: true
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          PUBLIC_PATH: build
+      - run: npm ci --if-present
+      - run: npm run build --if-present
+      - run: npm test --if-present
+      ##- run: npm deploy --if-present
