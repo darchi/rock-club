@@ -1,18 +1,27 @@
 {
-  "name": "json-lint-express",
-  "preferGlobal": true,
-  "version": "0.0.1",
-  "private": true,
-  "author": "Konstantin Kukharev <konstantin.kuharev@gmail.com>",
-  "description": "a simple web server that lints json strings",
-  "license": "MIT",
-  "devDependencies": {
-    "webpack": "4.43.0",
-    "webpack-cli": "3.3.11"
-  },
+  "name": "rock-club",
+  "version": "1.0.0",
+  "description": "rock-web",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "test": "test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darchi/rock-club.git"
+  },
+  "keywords": [
+    "rock"
+  ],
+  "author": "Konstantin Kukharev <konstantin.kuharev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darchi/rock-club/issues"
+  },
+  "homepage": "https://darchi.github.io/rock-club/",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }
