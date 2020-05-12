@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rock-club/static/css/main.5f361e03.chunk.css",
+    "main.js": "/rock-club/static/js/main.d3c8f854.chunk.js",
+    "main.js.map": "/rock-club/static/js/main.d3c8f854.chunk.js.map",
+    "runtime-main.js": "/rock-club/static/js/runtime-main.1c1344d1.js",
+    "runtime-main.js.map": "/rock-club/static/js/runtime-main.1c1344d1.js.map",
+    "static/js/2.a489c2db.chunk.js": "/rock-club/static/js/2.a489c2db.chunk.js",
+    "static/js/2.a489c2db.chunk.js.map": "/rock-club/static/js/2.a489c2db.chunk.js.map",
+    "index.html": "/rock-club/index.html",
+    "precache-manifest.fffc835b34da25f03d5d142a78db56aa.js": "/rock-club/precache-manifest.fffc835b34da25f03d5d142a78db56aa.js",
+    "service-worker.js": "/rock-club/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/rock-club/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.a489c2db.chunk.js.LICENSE.txt": "/rock-club/static/js/2.a489c2db.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/rock-club/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c1344d1.js",
+    "static/js/2.a489c2db.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.d3c8f854.chunk.js"
+  ]
+}
