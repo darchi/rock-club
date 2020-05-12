@@ -23,20 +23,18 @@ jobs:
         uses: actions/npm@e7aaefe
         with:
           node-version: ${{ matrix.node-version }}
-        args:
-          - install
+        run: |
+          npm run install
       - name: Build
         uses: actions/npm@e7aaefe
         with:
           node-version: ${{ matrix.node-version }}
-        args:
-          - run build
+        run: |
+          npm run build
       - name: Deploy
         uses: nchaulet/github-action-gh-pages@master
         with:
           node-version: ${{ matrix.node-version }}
-        args:
-          - run build
         run: |
           npm run deploy
         env:
