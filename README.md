@@ -1,4 +1,4 @@
-[https://darchi.github.io/rock-club/](OPEN)
+[OPEN](https://darchi.github.io/rock-club/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
